@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="ee.BraixV1.Base.Contracts.Domain.www" Version="1.0.0" />
+    </ItemGroup>
+
 </Project>
