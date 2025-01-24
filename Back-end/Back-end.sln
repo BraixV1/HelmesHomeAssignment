@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Contracts.DAL", "App.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Dal.DTO", "App.Dal.DTO\App.Dal.DTO.csproj", "{3BF622F3-BE77-4A7E-8E7E-941684A86B66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.BLL.DTO", "App.BLL.DTO\App.BLL.DTO.csproj", "{3CE445E9-8015-47A6-A9F6-AC583CA400E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{3BF622F3-BE77-4A7E-8E7E-941684A86B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BF622F3-BE77-4A7E-8E7E-941684A86B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BF622F3-BE77-4A7E-8E7E-941684A86B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE445E9-8015-47A6-A9F6-AC583CA400E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE445E9-8015-47A6-A9F6-AC583CA400E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE445E9-8015-47A6-A9F6-AC583CA400E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE445E9-8015-47A6-A9F6-AC583CA400E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

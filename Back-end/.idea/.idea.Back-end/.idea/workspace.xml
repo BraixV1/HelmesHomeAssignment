@@ -8,7 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="making automapper clearer" />
+    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="added AppUow.cs">
+      <change afterPath="$PROJECT_DIR$/App.BLL.DTO/BaseEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.BLL.DTO/ToDo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-end.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +27,7 @@
     <setting file="mock:///Users/brajankukk/Desktop/github/HelmesHomeAssignment/Back-end/App.Dal.EF/AutoMapperProfile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/733a3e713c5546be83f51f29b1193b191600/48/c20e0c66/IDalMapper`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9ff6fe24f5944b35a381217736eded33290038/4c/9020de6a/IReadOnlyPropertyBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/af1f3e7b0bc14afa9449398d74827adc5c00/8c/33355f3a/BaseUnitOfWork`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
@@ -92,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737740975895</updated>
-      <workItem from="1737740977482" duration="6523000" />
+      <workItem from="1737740977482" duration="8586000" />
     </task>
     <task id="LOCAL-00001" summary="initial back-end">
       <option name="closed" value="true" />
@@ -190,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737757530221</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added AppUow.cs">
+      <option name="closed" value="true" />
+      <created>1737757916470</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1737757916470</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +225,7 @@
     <MESSAGE value="added ToDoRepository.cs" />
     <MESSAGE value="adding AutoMapperProfile.cs" />
     <MESSAGE value="making automapper clearer" />
-    <option name="LAST_COMMIT_MESSAGE" value="making automapper clearer" />
+    <MESSAGE value="added AppUow.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added AppUow.cs" />
   </component>
 </project>
