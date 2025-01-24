@@ -8,8 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="adding AppDbContextFactory.cs">
-      <change afterPath="$PROJECT_DIR$/App.Dal.EF/DalDomainMapper.cs" afterDir="false" />
+    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="adding IToDoRepository.cs">
+      <change afterPath="$PROJECT_DIR$/App.Dal.EF/Repositories/ToDoRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Dal.EF/App.Dal.EF.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/App.Dal.EF/App.Dal.EF.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/brajankukk/Desktop/github/HelmesHomeAssignment/Back-end/App.Dal.DTO/ToDo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/733a3e713c5546be83f51f29b1193b191600/48/c20e0c66/IDalMapper`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9ff6fe24f5944b35a381217736eded33290038/4c/9020de6a/IReadOnlyPropertyBase.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -92,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737740975895</updated>
-      <workItem from="1737740977482" duration="4472000" />
+      <workItem from="1737740977482" duration="6172000" />
     </task>
     <task id="LOCAL-00001" summary="initial back-end">
       <option name="closed" value="true" />
@@ -126,7 +129,47 @@
       <option name="project" value="LOCAL" />
       <updated>1737755457041</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added DalDomainMapper.cs">
+      <option name="closed" value="true" />
+      <created>1737755546021</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737755546021</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added IAppUnitOfWork.cs">
+      <option name="closed" value="true" />
+      <created>1737755844199</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737755844199</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added DTO">
+      <option name="closed" value="true" />
+      <created>1737756697177</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737756697177</updated>
+    </task>
+    <task id="LOCAL-00008" summary="finishing Dto class">
+      <option name="closed" value="true" />
+      <created>1737757033283</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737757033283</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adding IToDoRepository.cs">
+      <option name="closed" value="true" />
+      <created>1737757047160</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737757047160</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +182,11 @@
     <MESSAGE value="added domain" />
     <MESSAGE value="added AppDbContext.cs" />
     <MESSAGE value="adding AppDbContextFactory.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding AppDbContextFactory.cs" />
+    <MESSAGE value="added DalDomainMapper.cs" />
+    <MESSAGE value="added IAppUnitOfWork.cs" />
+    <MESSAGE value="Added DTO" />
+    <MESSAGE value="finishing Dto class" />
+    <MESSAGE value="adding IToDoRepository.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding IToDoRepository.cs" />
   </component>
 </project>
