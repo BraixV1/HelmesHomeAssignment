@@ -10,4 +10,9 @@
       <PackageReference Include="ee.BraixV1.Base.Contracts.DAL.www" Version="1.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\App.Dal.DTO\App.Dal.DTO.csproj" />
+      <ProjectReference Include="..\App.Domain\App.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
