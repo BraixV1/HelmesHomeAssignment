@@ -8,11 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="initial back-end">
-      <change afterPath="$PROJECT_DIR$/App.Domain/BaseEntity.cs" afterDir="false" />
+    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="added domain">
+      <change afterPath="$PROJECT_DIR$/App.Dal.EF/AppDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Domain/App.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/App.Domain/App.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Domain/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Domain/ToDo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737740975895</updated>
-      <workItem from="1737740977482" duration="3536000" />
+      <workItem from="1737740977482" duration="4162000" />
     </task>
     <task id="LOCAL-00001" summary="initial back-end">
       <option name="closed" value="true" />
@@ -101,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737742059837</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added domain">
+      <option name="closed" value="true" />
+      <created>1737754898849</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737754898849</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial back-end" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial back-end" />
+    <MESSAGE value="added domain" />
+    <option name="LAST_COMMIT_MESSAGE" value="added domain" />
   </component>
 </project>
