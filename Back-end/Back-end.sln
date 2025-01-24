@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Dal.DTO", "App.Dal.DTO\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.BLL.DTO", "App.BLL.DTO\App.BLL.DTO.csproj", "{3CE445E9-8015-47A6-A9F6-AC583CA400E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Contracts.BLL", "App.Contracts.BLL\App.Contracts.BLL.csproj", "{62394C15-5CD5-49D9-A8EA-C89CD0BBB203}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{3CE445E9-8015-47A6-A9F6-AC583CA400E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CE445E9-8015-47A6-A9F6-AC583CA400E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CE445E9-8015-47A6-A9F6-AC583CA400E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62394C15-5CD5-49D9-A8EA-C89CD0BBB203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62394C15-5CD5-49D9-A8EA-C89CD0BBB203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62394C15-5CD5-49D9-A8EA-C89CD0BBB203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62394C15-5CD5-49D9-A8EA-C89CD0BBB203}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

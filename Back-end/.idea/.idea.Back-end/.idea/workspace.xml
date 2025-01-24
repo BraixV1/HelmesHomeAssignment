@@ -8,9 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="added AppUow.cs">
-      <change afterPath="$PROJECT_DIR$/App.BLL.DTO/BaseEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.BLL.DTO/ToDo.cs" afterDir="false" />
+    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="adding App.BLL.DTO  proj file">
+      <change afterPath="$PROJECT_DIR$/App.Contracts.BLL/IAppBLL.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.Contracts.BLL/Services/IToDoService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-end.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end.sln" afterDir="false" />
     </list>
@@ -98,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737740975895</updated>
-      <workItem from="1737740977482" duration="8586000" />
+      <workItem from="1737740977482" duration="10098000" />
     </task>
     <task id="LOCAL-00001" summary="initial back-end">
       <option name="closed" value="true" />
@@ -204,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737757916470</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="adding Bll DTO">
+      <option name="closed" value="true" />
+      <created>1737759857942</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1737759857942</updated>
+    </task>
+    <task id="LOCAL-00015" summary="adding App.BLL.DTO  proj file">
+      <option name="closed" value="true" />
+      <created>1737759953971</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1737759953971</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +242,8 @@
     <MESSAGE value="adding AutoMapperProfile.cs" />
     <MESSAGE value="making automapper clearer" />
     <MESSAGE value="added AppUow.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added AppUow.cs" />
+    <MESSAGE value="adding Bll DTO" />
+    <MESSAGE value="adding App.BLL.DTO  proj file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding App.BLL.DTO  proj file" />
   </component>
 </project>
