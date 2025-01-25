@@ -8,24 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApp/ConfigureSwaggerOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/Controllers/DoToController.cs" afterDir="false" />
+    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="first endpoint achieved">
+      <change afterPath="$PROJECT_DIR$/App.DTO/v1_0/RestAPIErrorResponse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.BLL.DTO/App.BLL.DTO.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/App.BLL.DTO/App.BLL.DTO.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.BLL.DTO/PaginatedResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.BLL.DTO/PaginatedResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.BLL/Service/ToDoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.BLL/Service/ToDoService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Contracts.DAL/Repositories/IToDoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Contracts.DAL/Repositories/IToDoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.DTO/v1_0/Read/PaginatedResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.DTO/v1_0/Read/PaginatedResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Dal.DTO/App.Dal.DTO.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/App.Dal.DTO/App.Dal.DTO.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Dal.DTO/PaginatedResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Dal.DTO/PaginatedResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Dal.EF/App.Dal.EF.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/App.Dal.EF/App.Dal.EF.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Dal.EF/AppDbContextFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Dal.EF/AppDbContextFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Dal.EF/Repositories/ToDoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Dal.EF/Repositories/ToDoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Helpers/AutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Helpers/AutoMapperProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/WebApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/WebApp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Controllers/DoToController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Controllers/DoToController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737740975895</updated>
       <workItem from="1737740977482" duration="30274000" />
-      <workItem from="1737817343763" duration="10966000" />
+      <workItem from="1737817343763" duration="16226000" />
     </task>
     <task id="LOCAL-00001" summary="initial back-end">
       <option name="closed" value="true" />
@@ -380,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737810907895</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="first endpoint achieved">
+      <option name="closed" value="true" />
+      <created>1737832267948</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1737832267948</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +383,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added IAppUnitOfWork.cs" />
     <MESSAGE value="Added DTO" />
     <MESSAGE value="finishing Dto class" />
     <MESSAGE value="adding IToDoRepository.cs" />
@@ -414,6 +407,7 @@
     <MESSAGE value="adding resources project" />
     <MESSAGE value="adding IApp mapppeer and PublicDTOBllMapper.cs to WebApp.csproj" />
     <MESSAGE value="dependency update" />
-    <option name="LAST_COMMIT_MESSAGE" value="dependency update" />
+    <MESSAGE value="first endpoint achieved" />
+    <option name="LAST_COMMIT_MESSAGE" value="first endpoint achieved" />
   </component>
 </project>
