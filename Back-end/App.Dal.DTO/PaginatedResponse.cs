@@ -2,7 +2,7 @@ namespace App.Dal.DTO;
 
 public class PaginatedResponse<TEntity>
 {
-    public ICollection<TEntity> Items { get; set; } = default!;
+    public IEnumerable<TEntity> Items { get; set; } = default!;
 
     public int TotalCount { get; set; } = default;
 
