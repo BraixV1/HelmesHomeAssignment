@@ -8,12 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="adding project BLL with services">
-      <change afterPath="$PROJECT_DIR$/App.DTO/v1_0/Read/ToDo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.DTO/v1_0/Write/ToDo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end.sln" afterDir="false" />
-    </list>
+    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="adding DTO-s" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737740975895</updated>
-      <workItem from="1737740977482" duration="14898000" />
+      <workItem from="1737740977482" duration="15687000" />
     </task>
     <task id="LOCAL-00001" summary="initial back-end">
       <option name="closed" value="true" />
@@ -246,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737765571816</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="adding DTO-s">
+      <option name="closed" value="true" />
+      <created>1737766674525</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1737766674526</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +276,7 @@
     <MESSAGE value="Adding Bll contracts" />
     <MESSAGE value="Adding toDOs to IAppUnitOfWork.cs" />
     <MESSAGE value="adding project BLL with services" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding project BLL with services" />
+    <MESSAGE value="adding DTO-s" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding DTO-s" />
   </component>
 </project>
