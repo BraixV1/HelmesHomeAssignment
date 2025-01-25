@@ -8,7 +8,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="adding DTO-s" />
+    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="adding PaginatedResponse.cs to every layer">
+      <change afterPath="$PROJECT_DIR$/App.Resources/App.Resources.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.Resources/FilterParams.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Helpers/AutoMapperProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Helpers/IAppMapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Helpers/PublicDTOBllMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.BLL.DTO/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.BLL.DTO/ToDo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.BLL/AutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.BLL/AutoMapperProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.BLL/Service/ToDoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.BLL/Service/ToDoService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Contracts.BLL/App.Contracts.BLL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/App.Contracts.BLL/App.Contracts.BLL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Contracts.BLL/Services/IToDoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Contracts.BLL/Services/IToDoService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Contracts.DAL/App.Contracts.DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/App.Contracts.DAL/App.Contracts.DAL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Contracts.DAL/Repositories/IToDoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Contracts.DAL/Repositories/IToDoRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.DTO/v1_0/Read/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.DTO/v1_0/Read/ToDo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.DTO/v1_0/Write/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.DTO/v1_0/Write/ToDo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Dal.DTO/PaginatedResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Dal.DTO/PaginatedResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Dal.DTO/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Dal.DTO/ToDo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Dal.EF/AutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Dal.EF/AutoMapperProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Dal.EF/Repositories/ToDoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Dal.EF/Repositories/ToDoRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Domain/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Domain/ToDo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-end.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/WebApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/WebApp.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,9 +44,13 @@
     <setting file="mock:///Users/brajankukk/Desktop/github/HelmesHomeAssignment/Back-end/App.Contracts.DAL/IAppUnitOfWork.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/brajankukk/Desktop/github/HelmesHomeAssignment/Back-end/App.Dal.DTO/ToDo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/brajankukk/Desktop/github/HelmesHomeAssignment/Back-end/App.Dal.EF/AutoMapperProfile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/brajankukk/Desktop/github/HelmesHomeAssignment/Back-end/App.Dal.EF/Repositories/ToDoRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/brajankukk/Desktop/github/HelmesHomeAssignment/Back-end/App.Dal.EF/Repositories/ToDoRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/733a3e713c5546be83f51f29b1193b191600/48/c20e0c66/IDalMapper`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9ff6fe24f5944b35a381217736eded33290038/4c/9020de6a/IReadOnlyPropertyBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/af1f3e7b0bc14afa9449398d74827adc5c00/8c/33355f3a/BaseUnitOfWork`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/af1f3e7b0bc14afa9449398d74827adc5c00/e4/7fd91b14/BaseEntityRepository`3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/af1f3e7b0bc14afa9449398d74827adc5c00/f1/a392dc75/BaseEntityRepository`4.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
@@ -95,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737740975895</updated>
-      <workItem from="1737740977482" duration="15687000" />
+      <workItem from="1737740977482" duration="26306000" />
     </task>
     <task id="LOCAL-00001" summary="initial back-end">
       <option name="closed" value="true" />
@@ -249,7 +276,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737766674526</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="adding dto project file">
+      <option name="closed" value="true" />
+      <created>1737766805938</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1737766805940</updated>
+    </task>
+    <task id="LOCAL-00021" summary="adding PaginatedResponse.cs to every layer">
+      <option name="closed" value="true" />
+      <created>1737767385307</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1737767385307</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +320,8 @@
     <MESSAGE value="Adding toDOs to IAppUnitOfWork.cs" />
     <MESSAGE value="adding project BLL with services" />
     <MESSAGE value="adding DTO-s" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding DTO-s" />
+    <MESSAGE value="adding dto project file" />
+    <MESSAGE value="adding PaginatedResponse.cs to every layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding PaginatedResponse.cs to every layer" />
   </component>
 </project>
