@@ -21,7 +21,7 @@ public class ToDoRepository : BaseEntityRepository<App.Domain.ToDo, App.Dal.DTO.
 
     }
 
-    public async Task<PaginatedResponse<DTO.ToDo>> GetAllFiltered(FilterParams filterParams, int pageNumber, int pageSize)
+    public async Task<IPaginateResponse<DTO.ToDo>> GetAllFiltered(FilterParams filterParams, int pageNumber, int pageSize)
     {
         var query = _context.Todos.AsQueryable();
         

@@ -10,7 +10,7 @@
       <PackageReference Include="AutoMapper" Version="13.0.1" />
       <PackageReference Include="ee.BraixV1.Base.Contracts.DAL.www" Version="1.0.0" />
       <PackageReference Include="ee.BraixV1.Base.DAL.EF.www" Version="1.0.0" />
-      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.3" />
     </ItemGroup>
 
     <ItemGroup>

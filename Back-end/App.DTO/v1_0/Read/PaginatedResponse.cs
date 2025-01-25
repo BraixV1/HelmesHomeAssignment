@@ -1,8 +1,8 @@
 namespace App.DTO.v1_0.Read;
 
-public class PaginatedResponse<TEntity>
+public class PaginatedResponse
 {
-    public ICollection<TEntity> Items { get; set; } = default!;
+    public ICollection<ToDo> Items { get; set; } = default!;
 
     public int TotalCount { get; set; } = default;
 

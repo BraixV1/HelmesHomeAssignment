@@ -11,5 +11,5 @@ public interface IToDoRepository : IEntityRepository<App.Dal.DTO.ToDo>, IToDoRep
 
 public interface IToDoRepositoryCustom<TEntity>
 {
-    Task<PaginatedResponse<TEntity>> GetAllFiltered(FilterParams filterParams, int pageNumber, int pageSize);
+    Task<IPaginateResponse<TEntity>> GetAllFiltered(FilterParams filterParams, int pageNumber, int pageSize);
 }

@@ -1,8 +1,10 @@
+using App.Resources;
+
 namespace App.BLL.DTO;
 
-public class PaginatedResponse<TEntity>
+public class PaginatedResponse<TEntity> : IPaginateResponse<TEntity>
 {
-    public ICollection<TEntity> Items { get; set; } = default!;
+    public IEnumerable<TEntity> Items { get; set; } = default!;
 
     public int TotalCount { get; set; } = default;
 

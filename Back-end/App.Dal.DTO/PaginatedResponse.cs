@@ -1,6 +1,8 @@
+using App.Resources;
+
 namespace App.Dal.DTO;
 
-public class PaginatedResponse<TEntity>
+public class PaginatedResponse<TEntity> : IPaginateResponse<TEntity>
 {
     public IEnumerable<TEntity> Items { get; set; } = default!;
 

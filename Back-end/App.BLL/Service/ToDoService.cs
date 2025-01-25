@@ -17,13 +17,13 @@ public class ToDoService : BaseEntityService<App.Dal.DTO.ToDo, App.BLL.DTO.ToDo,
     {
         _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
     }
-    public async Task<PaginatedResponse<DTO.ToDo>> GetAllFiltered(FilterParams filterParams, int pageNumber, int pageSize)
+    public async Task<IPaginateResponse<App.BLL.DTO.ToDo>> GetAllFiltered(FilterParams filterParams, int pageNumber, int pageSize)
     {
         var resultCall = await Repository.GetAllFiltered(filterParams, pageNumber, pageSize);
 
-        var result = new PaginatedResponse<DTO.ToDo>
+        var result = new App.BLL.DTO.PaginatedResponse<App.BLL.DTO.ToDo>
         {
-            Items = resultCall.Items.Select(toDo => _mapper.Map<DTO.ToDo>(toDo)),
+            Items = resultCall.Items.Select(toDo => _mapper.Map<App.BLL.DTO.ToDo>(toDo)),
             PageNumber = pageNumber,
             PageSize = pageSize,
             TotalCount = resultCall.TotalCount
