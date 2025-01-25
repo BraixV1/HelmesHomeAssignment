@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="ee.Braixv1.Base.BLL.www" Version="1.0.0" />
       <PackageReference Include="ee.BraixV1.Base.Contracts.BLL.www" Version="1.0.0" />
       <PackageReference Include="ee.BraixV1.Base.Contracts.DAL.www" Version="1.0.0" />
     </ItemGroup>

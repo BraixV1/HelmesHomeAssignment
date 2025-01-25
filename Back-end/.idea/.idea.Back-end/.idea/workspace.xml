@@ -8,10 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="adding App.BLL.DTO  proj file">
-      <change afterPath="$PROJECT_DIR$/App.Contracts.BLL/IAppBLL.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.Contracts.BLL/Services/IToDoService.cs" afterDir="false" />
+    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="Adding Bll contracts">
+      <change afterPath="$PROJECT_DIR$/App.BLL/AppBLL.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.BLL/AutoMapperProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.BLL/BllDalMappper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.BLL/Service/ToDoService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Contracts.BLL/App.Contracts.BLL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/App.Contracts.BLL/App.Contracts.BLL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.Contracts.DAL/IAppUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Contracts.DAL/IAppUnitOfWork.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-end.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +52,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -98,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737740975895</updated>
-      <workItem from="1737740977482" duration="10098000" />
+      <workItem from="1737740977482" duration="14136000" />
     </task>
     <task id="LOCAL-00001" summary="initial back-end">
       <option name="closed" value="true" />
@@ -220,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737759953971</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Adding Bll contracts">
+      <option name="closed" value="true" />
+      <created>1737761353373</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1737761353373</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +257,7 @@
     <MESSAGE value="added AppUow.cs" />
     <MESSAGE value="adding Bll DTO" />
     <MESSAGE value="adding App.BLL.DTO  proj file" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding App.BLL.DTO  proj file" />
+    <MESSAGE value="Adding Bll contracts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Bll contracts" />
   </component>
 </project>
