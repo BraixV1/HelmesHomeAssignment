@@ -13,6 +13,8 @@ public class ToDo
     
     public ToDo? parentTask { get; set; }
     
+    public DateTime DueDate { get; set; } = default!;
+    
     public ICollection<ToDo>? subTasks { get; set; }
     
     public Guid Id { get; set; } = default!;

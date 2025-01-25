@@ -7,6 +7,8 @@ public class ToDo : BaseEntity
 
     public string Description { get; set; } = default!;
 
+    public DateTime DueDate { get; set; } = default!;
+    
     public bool Completed { get; set; } = default!;
     
     public Guid? parentTaskId { get; set; }
