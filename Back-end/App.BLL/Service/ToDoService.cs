@@ -31,4 +31,25 @@ public class ToDoService : BaseEntityService<App.Dal.DTO.ToDo, App.BLL.DTO.ToDo,
 
         return result;
     }
+
+    public async Task<App.BLL.DTO.ToDo> AddToDoAsync(App.BLL.DTO.ToDo toDo)
+    {
+        if (toDo.parentTaskId.HasValue && !await Repository.ExistsAsync(toDo.parentTaskId.Value))
+        {
+            throw new ArgumentException("Parent ToDo does not exist");
+        }
+
+        var mapped = _mapper.Map<App.Dal.DTO.ToDo>(toDo);
+
+        if (mapped is null)
+        {
+            throw new ArgumentException("Mapping result is null");
+        }
+        
+        mapped.CreatedAt = DateTime.Now;
+
+        var added = Repository.Add(mapped);
+
+        return _mapper.Map<App.BLL.DTO.ToDo>(added);
+    }
 }

@@ -1,6 +1,6 @@
 namespace App.DTO.v1_0.Write;
 
-public class ToDo
+public class WriteToDo
 {
     
     public string Title { get; set; } = default!;
@@ -11,15 +11,9 @@ public class ToDo
     
     public Guid? parentTaskId { get; set; }
     
-    public ToDo? parentTask { get; set; }
+    public WriteToDo? parentTask { get; set; }
     
     public DateTime DueDate { get; set; } = default!;
     
-    public ICollection<ToDo>? subTasks { get; set; }
-    
-    public Guid Id { get; set; } = default!;
-    public string CreatedBy { get; set; } = default!;
-    public DateTime CreatedAt { get; set; } = default!;
     public string UpdatedBy { get; set; } = default!;
-    public DateTime UpdatedAt { get; set; } = default!;
 }
