@@ -20,6 +20,16 @@ note: Make sure you are in the root directory (HelmesHomeAssignment) when execut
 docker-compose up --build
 ```
 
+after successful build and launch front-end should be accessable at 
+```
+http:localhost:3000
+```
+
+swagger should be at
+```
+http:locahost:5001/swagger
+```
+
 ## Migration generating
 
 if for some reason in back-end/App.Dal.EF.Migrations aren't any files or c# project can't access correct schemas use the following command:
@@ -29,4 +39,5 @@ Note: Make sure you are in the Back-end folder when executing this command
 ```Bash
 dotnet ef migrations --project App.DaL.EF --startup-project WebApp add Initial
 ```
+
 
