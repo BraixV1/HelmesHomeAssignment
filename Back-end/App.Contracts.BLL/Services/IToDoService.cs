@@ -11,4 +11,6 @@ public interface IToDoService: IEntityRepository<App.BLL.DTO.ToDo>, IToDoReposit
 public interface IToDoServiceCustom<TEntity>
 {
     Task<TEntity> AddToDoAsync(TEntity entity);
+
+    Task<TEntity> UpdateToDoAsync(TEntity entity);
 }

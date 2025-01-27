@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace App.Dal.EF.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250125145636_initial")]
+    [Migration("20250126211637_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -38,7 +38,6 @@ namespace App.Dal.EF.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Description")
@@ -56,7 +55,6 @@ namespace App.Dal.EF.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("UpdatedBy")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<Guid?>("parentTaskId")

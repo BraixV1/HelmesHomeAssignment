@@ -1,6 +1,6 @@
 namespace App.DTO.v1_0.Read;
 
-public class ReadToDo
+public class ReadToDoWithoutObj
 {
     public string Title { get; set; } = default!;
 
@@ -11,11 +11,6 @@ public class ReadToDo
     public DateTime DueDate { get; set; } = default!;
     
     public Guid? parentTaskId { get; set; }
-    
-    public ReadToDoWithoutObj? parentTask { get; set; }
-    
-    public ICollection<ReadToDoWithoutObj>? subTasks { get; set; }
-    
     
     public Guid Id { get; set; } = default!;
     public string CreatedBy { get; set; } = default!;

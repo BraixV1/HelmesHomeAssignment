@@ -35,7 +35,6 @@ namespace App.Dal.EF.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Description")
@@ -53,7 +52,6 @@ namespace App.Dal.EF.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("UpdatedBy")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<Guid?>("parentTaskId")

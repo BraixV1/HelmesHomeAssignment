@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=todos
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./Back-end
+      dockerfile: DockerFile.backend
+    ports:
+      - "5002:80"
+      - "5001:8080"
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=todos;Username=postgres;Password=postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./front-end
+      dockerfile: DockerFile.frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_APIENDPOINT=http://backend:5002/api/v1/toDo
+    depends_on:
+      - backend
+
+volumes:
+  postgres-data:

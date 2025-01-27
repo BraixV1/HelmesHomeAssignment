@@ -50,7 +50,7 @@ public class DoToController : Controller
     /// <param name="dueDateTime">optional filter that returns toDos that have to be done specific date</param>
     /// <returns></returns>
     [HttpGet]
-    [Route("ToDo")]
+    [Route("")]
     [ProducesResponseType(typeof(PaginatedResponse), (int)HttpStatusCode.OK)]
     [Produces("application/json")]
     [Consumes("application/json")]
@@ -86,7 +86,7 @@ public class DoToController : Controller
     /// <param name="id">id of the ToDo</param>
     /// <returns>found toDo if it exists</returns>
     [HttpGet]
-    [Route("ToDo/{id:guid}")]
+    [Route("{id:guid}")]
     [ProducesResponseType(typeof(PaginatedResponse), (int)HttpStatusCode.OK)]
     [ProducesResponseType(typeof(RestAPIErrorResponse), (int)HttpStatusCode.NotFound)]
     [Produces("application/json")]
@@ -113,7 +113,7 @@ public class DoToController : Controller
     /// <param name="readToDo"> toDo that will be saved to the database </param>
     /// <returns>saved toDo if save was successful</returns>
     [HttpPost]
-    [Route("ToDo")]
+    [Route("")]
     [ProducesResponseType(typeof(App.DTO.v1_0.Read.ReadToDo), (int)HttpStatusCode.OK)]
     [ProducesResponseType(typeof(RestAPIErrorResponse), (int)HttpStatusCode.BadRequest)]
     [Produces("application/json")]
@@ -132,8 +132,9 @@ public class DoToController : Controller
             
             var result = await _bll.ToDos.AddToDoAsync(mapped);
 
-
-            return Ok(result);
+            await _bll.SaveChangesAsync();
+            
+            return Ok(_ToDomapper.Map(result));
         }
         catch (Exception e)
         {
@@ -149,29 +150,33 @@ public class DoToController : Controller
     /// <param name="toDo">new toDo that will overwrite the previous one</param>
     /// <returns>updated Todo was update was successful</returns>
     [HttpPut]
-    [Route("ToDo/{id:guid}")]
+    [Route("{id:guid}")]
     [ProducesResponseType(typeof(WriteToDo), (int)HttpStatusCode.OK)]
     [ProducesResponseType(typeof(RestAPIErrorResponse), (int)HttpStatusCode.BadRequest)]
     [ProducesResponseType(typeof(RestAPIErrorResponse), (int)HttpStatusCode.NotFound)]
     [Produces("application/json")]
     [Consumes("application/json")]
-    public async Task<ActionResult<WriteToDo>> Put(Guid id, WriteToDo toDo)
+    public async Task<ActionResult<WriteToDo>> Put(Guid id, ReadToDo toDo)
     {
+
+        toDo.Id = id;
+        toDo.UpdatedAt = DateTime.Now;
+        
         try
         {
-            var mapped = _WriteToDoMapper.Map(toDo);
+            var mapped = _ToDomapper.Map(toDo);
 
             if (mapped is null)
             {
                 return BadRequest(new RestAPIErrorResponse
                     { Error = "Mapping result was null", Status = HttpStatusCode.BadRequest });
             }
-            
-            var result = _bll.ToDos.Update(mapped);
+
+            var result = await _bll.ToDos.UpdateToDoAsync(mapped);
 
             await _bll.SaveChangesAsync();
 
-            return Ok(result);
+            return Ok(_ToDomapper.Map(result));
         }
         catch (Exception e)
         {
@@ -189,7 +194,7 @@ public class DoToController : Controller
     /// <param name="id"></param>
     /// <returns>true if deletion was successful</returns>
     [HttpDelete]
-    [Route("Todo/{id:guid}")]
+    [Route("{id:guid}")]
     [ProducesResponseType(typeof(App.DTO.v1_0.Read.ReadToDo), (int)HttpStatusCode.OK)]
     [ProducesResponseType(typeof(RestAPIErrorResponse), (int)HttpStatusCode.BadRequest)]
     [ProducesResponseType(typeof(RestAPIErrorResponse), (int)HttpStatusCode.NotFound)]

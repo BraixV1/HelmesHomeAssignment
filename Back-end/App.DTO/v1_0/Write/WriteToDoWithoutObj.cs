@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace App.DTO.v1_0.Write;
 
-public class WriteToDo
+public class WriteToDoWithoutObj
 {
     [Required]
     public string Title { get; set; } = default!;
@@ -14,8 +14,6 @@ public class WriteToDo
     public bool Completed { get; set; } = default!;
     
     public Guid? parentTaskId { get; set; }
-    
-    public WriteToDoWithoutObj? parentTask { get; set; }
     
     [Required]
     public DateTime DueDate { get; set; } = default!;

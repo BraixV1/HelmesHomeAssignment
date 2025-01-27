@@ -8,6 +8,9 @@ public class AutoMapperProfile : Profile
 {
     public AutoMapperProfile()
     {
+
+        CreateMap<App.BLL.DTO.ToDo, App.DTO.v1_0.Write.WriteToDoWithoutObj>().ReverseMap();
+        CreateMap<App.BLL.DTO.ToDo, App.DTO.v1_0.Read.ReadToDoWithoutObj>().ReverseMap();
         
         CreateMap<App.BLL.DTO.ToDo, App.DTO.v1_0.Read.ReadToDo>().ReverseMap();
         CreateMap<App.BLL.DTO.ToDo, App.DTO.v1_0.Write.WriteToDo>().ReverseMap(); 

@@ -27,12 +27,12 @@ public class ToDoRepository : BaseEntityRepository<App.Domain.ToDo, App.Dal.DTO.
         
         if (!string.IsNullOrEmpty(filterParams.NameFilter))
         {
-            query = query.Where(t => t.Title.Contains(filterParams.NameFilter));
+            query = query.Where(t => t.Title.ToLower().Contains(filterParams.NameFilter.ToLower()));
         }
 
         if (!string.IsNullOrEmpty(filterParams.DescFilter))
         {
-            query = query.Where(t => t.Description.Contains(filterParams.DescFilter));
+            query = query.Where(t => t.Description.ToLower().Contains(filterParams.DescFilter.ToLower()));
         }
 
         if (filterParams.DoneFilter.HasValue)
@@ -42,7 +42,7 @@ public class ToDoRepository : BaseEntityRepository<App.Domain.ToDo, App.Dal.DTO.
 
         if (filterParams.DueDateTime.HasValue)
         {
-            query = query.Where(t => t.DueDate <= filterParams.DueDateTime.Value);
+            query = query.Where(t => t.DueDate.ToUniversalTime() <= filterParams.DueDateTime.Value);
         }
         
         var totalCount = await query.CountAsync();

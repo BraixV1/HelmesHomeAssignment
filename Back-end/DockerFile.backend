@@ -1,0 +1,46 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /app
+
+# copy csproj and restore as distinct layers
+COPY *.sln .
+# copy ALL the projects
+COPY App.BLL/*.csproj ./App.BLL/
+COPY App.BLL.DTO/*.csproj ./App.BLL.DTO/
+COPY App.Contracts.BLL/*.csproj ./App.Contracts.BLL/
+COPY App.Contracts.DAL/*.csproj ./App.Contracts.DAL/
+COPY App.Dal.DTO/*.csproj ./App.Dal.DTO/
+COPY App.Dal.EF/*.csproj ./App.Dal.EF/
+COPY App.DTO/*.csproj ./App.DTO/
+COPY App.Domain/*.csproj ./App.Domain/
+COPY App.Resources/*.csproj ./App.Resources/
+COPY WebApp/*.csproj ./WebApp/
+
+RUN dotnet restore
+
+
+# copy everything else and build app
+# copy all the projects
+COPY App.BLL/. ./App.BLL/
+COPY App.BLL.DTO/. ./App.BLL.DTO/
+COPY App.Contracts.BLL/. ./App.Contracts.BLL/
+COPY App.Contracts.DAL/. ./App.Contracts.DAL/
+COPY App.Dal.DTO/. ./App.Dal.DTO/
+COPY App.Dal.EF/. ./App.Dal.EF/
+COPY App.DTO/. ./App.DTO/
+COPY App.Domain/. ./App.Domain/
+COPY App.Resources/. ./App.Resources/
+COPY WebApp/. ./WebApp/
+
+# run tests
+
+# build output files
+WORKDIR /app/WebApp
+RUN dotnet publish -c Release -o out
+
+# switch to runtime image
+FROM --platform=linux/amd64 mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+EXPOSE 80
+EXPOSE 8080
+WORKDIR /app
+COPY --from=build /app/WebApp/out ./
+ENTRYPOINT ["dotnet", "WebApp.dll"]

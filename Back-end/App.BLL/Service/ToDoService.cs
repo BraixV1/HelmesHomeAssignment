@@ -46,10 +46,30 @@ public class ToDoService : BaseEntityService<App.Dal.DTO.ToDo, App.BLL.DTO.ToDo,
             throw new ArgumentException("Mapping result is null");
         }
         
-        mapped.CreatedAt = DateTime.Now;
+        mapped.CreatedAt = DateTime.UtcNow;
 
         var added = Repository.Add(mapped);
 
         return _mapper.Map<App.BLL.DTO.ToDo>(added);
+    }
+
+    public async Task<App.BLL.DTO.ToDo> UpdateToDoAsync(App.BLL.DTO.ToDo toDo)
+    {
+        var found = await Repository.FirstOrDefaultAsync(toDo.Id);
+        if (found is null)
+        {
+            throw new ArgumentException("Todo does not exist");
+        }
+
+        found.Completed = toDo.Completed;
+        found.DueDate = toDo.DueDate;
+        found.Title = toDo.Title;
+        found.UpdatedAt = DateTime.UtcNow;
+        found.UpdatedBy = toDo.UpdatedBy;
+
+        var result = Repository.Update(found);
+
+        return _mapper.Map<App.BLL.DTO.ToDo>(result);
+
     }
 }
