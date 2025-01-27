@@ -21,14 +21,14 @@ docker-compose up --build
 ```
 
 after successful build and launch front-end should be accessable at 
-```
-http:localhost:3000
-```
+
+http://localhost:3000
+
 
 swagger should be at
-```
-http:locahost:5001/swagger
-```
+
+http://locahost:5001/swagger
+
 
 ## Migration generating
 
