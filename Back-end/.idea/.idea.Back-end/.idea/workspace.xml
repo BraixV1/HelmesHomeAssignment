@@ -8,28 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="first endpoint achieved">
-      <change afterPath="$PROJECT_DIR$/App.DTO/v1_0/Read/ReadToDoWithoutObj.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.DTO/v1_0/Write/WriteToDoWithoutObj.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.BLL/Service/ToDoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.BLL/Service/ToDoService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Contracts.BLL/Services/IToDoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Contracts.BLL/Services/IToDoService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.DTO/v1_0/Read/ReadToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.DTO/v1_0/Read/ReadToDo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.DTO/v1_0/Write/WriteToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.DTO/v1_0/Write/WriteToDo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Dal.EF/Migrations/20250125145636_initial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Dal.EF/Migrations/20250125145636_initial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Dal.EF/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Dal.EF/Repositories/ToDoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Dal.EF/Repositories/ToDoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Domain/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.Domain/BaseEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Controllers/DoToController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Controllers/DoToController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Helpers/AutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Helpers/AutoMapperProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Database/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/tailwind.config.ts" afterDir="false" />
-    </list>
+    <list default="true" id="185956d9-29a1-4641-866c-816dfbda71ca" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +105,7 @@
       <updated>1737740975895</updated>
       <workItem from="1737740977482" duration="30274000" />
       <workItem from="1737817343763" duration="16226000" />
-      <workItem from="1737882622892" duration="15561000" />
+      <workItem from="1737882622892" duration="20933000" />
     </task>
     <task id="LOCAL-00001" summary="initial back-end">
       <option name="closed" value="true" />

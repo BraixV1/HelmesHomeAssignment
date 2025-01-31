@@ -59,16 +59,15 @@ function ToDoList() {
         </button>
         <span>
           Page {toDoPagination?.pageNumber} of{" "}
-          {Math.ceil(
-            toDoPagination?.totalCount ?? 0 / toDoPagination?.pageSize ?? 10,
-          )}
+          {Math.floor(toDoPagination?.totalCount / toDoPagination?.pageSize) +
+            1}
         </span>
         <button
-          onClick={() => handlePageChange(toDoPagination?.pageNumber ?? 0 + 1)}
+          onClick={() => handlePageChange(toDoPagination?.pageNumber + 1)}
           disabled={
             toDoPagination?.pageNumber ===
-            Math.ceil(
-              toDoPagination?.totalCount ?? 0 / toDoPagination!.pageSize,
+            Math.floor(
+              toDoPagination?.totalCount / toDoPagination!.pageSize + 1,
             )
           }
           className="px-4 py-2 bg-blue-500 text-white rounded disabled:bg-gray-300"
